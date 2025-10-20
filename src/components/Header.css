@@ -1,0 +1,147 @@
+
+/* Navbar Styling */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #111;
+  padding: 10px 30px;
+  color: white;
+}
+.txt-navbar{
+
+font-weight: lighter;
+
+
+}
+/* Left side (logos) */
+.nav-left {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.nav-left .logo {
+  width: 50px;
+  height: 50px;
+  object-fit: contain;
+}
+
+/* Right side (icons) */
+.nav-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.nav-right i {
+  font-size: 22px;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+.nav-right i:hover {
+  color: #00c3ff;
+}
+
+/* Close icon special styling */
+.close-icon {
+  color:#ff4d4d;
+}
+/* Second Navbar Styles */
+
+.navbar2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 15px 50px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100px;
+  /* position: fixed; */
+}
+
+.logo2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: lowercase;
+  color: #222;
+}
+.dot{
+    color: #00c3ff;
+}
+.logo2-dot{
+    display: flex;
+    gap: 0px;
+    flex-direction: row;
+}
+.nav-links2 {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  gap: 60px;
+}
+
+.nav-links2 a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.nav-links2 a:hover {
+  color: #007bff;
+}
+
+/* Dropdown styling */
+.dropdown2 {
+  position: relative;
+}
+
+.dropdown-menu2 {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background-color: #ffffff;
+  list-style: none;
+  padding: 10px 0;
+  display: none;
+  flex-direction: column;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  min-width: 150px;
+}
+
+.dropdown-menu2 li {
+  padding: 8px 15px;
+}
+
+.dropdown-menu2 li a {
+  color: #333;
+  display: block;
+  transition: color 0.2s;
+}
+
+.dropdown-menu2 li a:hover {
+  background-color: #f2f2f2;
+}
+
+/* Show dropdown on hover */
+.dropdown2:hover .dropdown-menu2 {
+  display: flex;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar2 {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .nav-links2 {
+    flex-direction: column;
+    gap: 15px;
+    margin-top:10px;
+}
+}
