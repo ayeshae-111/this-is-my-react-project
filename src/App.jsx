@@ -1,11 +1,13 @@
-import React from "react";
-import Daraz from "./Projects/Daraz";
+import React, { Profiler } from "react";
+import ProfileContainer from "./project-class/profilecontainer";
+
 
 
 function App() {
   return (
     <div>
-  < Daraz/>
+  
+< ProfileContainer/>
     </div>
 
   );

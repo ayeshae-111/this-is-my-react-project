@@ -1,0 +1,58 @@
+.profile-container {
+  width: 100%;
+  max-width: 600px;
+  margin: 40px auto;
+  font-family: "Poppins", sans-serif;
+  color: #262626;
+  border: 4 px solid red;
+}
+
+.profile-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #dbdbdb;
+  padding-bottom: 20px;
+}
+
+.profile-header img {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-right: 40px;
+  border: 1px solid #dbdbdb;
+}
+
+.profile-header h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.profile-stats {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 15px;
+}
+
+.profile-stat {
+  text-align: center;
+}
+
+.profile-stat span {
+  display: block;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.profile-stat label {
+  font-size: 14px;
+  color: #8e8e8e;
+}
+
+.profile-header img:hover {
+  transform: scale(1.02);
+  transition: 0.3s;
+}
